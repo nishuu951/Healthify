@@ -1,0 +1,533 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    --background-color: #BFACF3;
+    --main-color: #000000;
+    --primary-color: #CCCDCF;
+    --button-color: #735BCB;
+    --primary-button-color: #FF6E8D;
+}
+
+h1,h2{
+    font-family: 'Reem Kufi', sans-serif;
+    color:var( --main-color);
+}
+
+h3,h4{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color:var( --primary-color);
+}
+
+p,a,button,li{
+    font-family: 'Big Shoulders Stencil Display', cursive;  
+    color:var( --primary-color);
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-weight: normal;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    box-shadow: 1px 1px var(--background-color);
+}
+
+
+/* Navbar css code */
+
+header{
+    width:100%;
+    height:100px;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left part css code */
+header .left-part{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left-part .logo a img{
+    width:130px;
+    height:70px;
+}
+
+header .left-part .menu-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left-part .menu-options a li{
+    margin-right: 40px;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+header .left-part .menu-options a li:hover{
+    color:var(--button-color);
+    border-width:2px;  
+    border-bottom-style:dotted;
+    border-color: var(--primary-button-color);
+    border-radius: 5px;
+}
+
+/* Right part css code */
+header .right-part{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+header .right-part  a li{
+    font-size: 20px;
+    background-color:var(--primary-button-color);
+    border-radius: 20px;
+    padding:10px 20px;
+    transition: all 0.2s;
+    margin-right: 5px;
+    color:white;
+}
+header .right-part button{
+  background-color: var(--button-color);
+  color: white;
+}
+header .right-part  a li:hover{
+    background-color: var(--button-color);
+    color: white;
+}
+
+header .right-part button:hover{
+    background-color:var(--primary-button-color);
+}
+
+
+/* Hero section css code */
+
+.hero{
+    padding: 0 150px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+/* Hero section left part  */
+.hero .hero-lt{
+    width:60%;
+    padding:0;
+}
+
+.hero .hero-lt h1{
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+.hero .hero-lt p{
+    font-size:18px;
+    width:90%;
+    line-height: 20px;
+   margin-top: 30px;
+}
+
+.hero .hero-lt .button-group{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-lt .button-group .app{
+    width:200px;
+    height:60px;
+    margin-top: 10px;
+   
+}
+
+.hero .hero-lt .button-group .play{
+    width:200px;
+    height:160px;
+    margin-left: 20px;
+   
+}
+
+/* Hero section right part */
+.hero .hero-rt img{
+    margin-left: 50px;
+    width:900px;
+    height:650px;
+}
+   
+/* About Us part css code */
+.aboutus{
+    padding: 80px 150px;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color:transparent;
+}
+
+/* Aboutus left part */ 
+
+.aboutus .aboutus-lt figure{
+    width:100px;
+    height:500px;
+    background: rgb(224,205,255);
+    background: linear-gradient(341deg, rgba(224,205,255,1) 0%, rgba(160,126,239,1) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+}
+
+.aboutus .aboutus-lt img{
+    width:650px;
+    height:700px;
+}
+/* Aboutus right section */
+
+.aboutus .aboutus-rt{
+    width: 50%;
+    margin-left: 650px;
+}
+.aboutus .aboutus-rt h1{
+    width: 60%;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.aboutus .aboutus-rt p{
+    width:60%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.aboutus .aboutus-rt .buttons .btn1 {
+    background-color: var(--primary-button-color);
+    color: white;
+    margin-right: 20px;
+}
+
+.aboutus .aboutus-rt .buttons .btn2{
+    background-color: white;
+}
+
+.aboutus .aboutus-rt .buttons .btn2:hover{
+    background-color: var(--primary-button-color);
+    color: white; 
+    transition: 0.2s;
+}
+
+.aboutus .aboutus-rt .buttons .btn1:hover{
+    background-color: var(--button-color);
+    color: white; 
+    transition: 0.2s;
+}
+
+/* Tools for goals css code */
+
+.third{
+    background: rgb(224,205,255);
+    background: linear-gradient(341deg, rgba(224,205,255,1) 0%, rgba(160,126,239,1) 100%);
+    width:100%;
+    padding: 50px 150px;
+}
+
+.third h2{
+    font-size:50px;
+   padding-top: 40px;
+    text-align:center;
+    padding-bottom: 15px;
+}
+
+.third p{
+    width:400px;
+    height:110px;
+    font-size:18px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin:auto;
+    color: white;
+}
+
+.third .tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    padding-top: 30px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.third .tools h3{
+    font-size:30px;
+    color: var(--main-color);
+}
+
+.third .tools img{
+    width:150px;
+    height:150px;
+    transition: all 0.3s;
+}
+
+.third .tools .tool-3 img{
+    padding-top: 10px;
+    height:140px;
+    margin-bottom: 15px;
+}
+ 
+.third .tools h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.third .tools p{
+    width:70%;
+}
+
+.third .tools .tool-3{
+    background-color: white;
+    box-shadow: 5px 5px 5px var(--primary-button-color);
+    padding-top: 20px;
+    border-radius: 20px;  
+}
+
+.third .tools .tool-3 p {
+    color:var(--primary-color)
+}
+.third .tools .tool-1:hover,
+.third .tools .tool-2:hover{
+    background-color: white;
+    box-shadow: 5px 5px 5px var(--primary-button-color);
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.third .tools .tool-1:hover > img,
+.third .tools .tool-2:hover > img,
+.third .tools .tool-3:hover > img{
+   transform: rotate(360deg);
+}
+
+.third .tools .tool-1:hover > p,
+.third .tools .tool-2:hover > p{
+  color:var(--primary-color)
+}
+
+/* Fourth page css code */
+
+.fourth{
+width:100%;
+height:100%;
+padding: 50px 150px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.fourth .fourth-lt{
+    width: 50%;
+}
+
+.fourth .fourth-lt h1{
+    margin-top: 50px;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.fourth .fourth-lt p{
+    width: 80%;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.fourth .fourth-lt .buttons .btn1{
+    background-color: var(--primary-button-color);
+    color: white;
+    margin-right: 20px;
+}
+
+.fourth .fourth-lt .buttons .btn2{
+    background-color: white; 
+}
+
+.fourth .fourth-lt .buttons .btn1:hover{
+    background-color: var(--button-color);
+    color: white; 
+    transition: 0.2s;
+}
+
+.fourth .fourth-lt .buttons .btn2:hover{
+    background-color: var(--primary-button-color);
+    color: white; 
+    transition: 0.2s;   
+}
+
+/* Fourth page right part */
+.fourth .fourth-rt figure img{
+    width:650px;
+    height:700px;
+}
+
+/* Fifth Page css code starts */
+
+.fifth{
+    width:100%;
+    height:100%;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fifth .fifth-lt img{
+   width: 800px;
+   height: 450px;
+   padding-right: 200px;
+}
+
+.fifth .fifth-rt{
+width:40%;
+height:100%
+}
+
+.fifth .fifth-rt h2{
+    width: 70%;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.fifth .fifth-rt .fitness-goals h3{
+font-size: 20px;
+margin:10px 0;
+color: var(--main-color);
+}
+
+.fifth .fifth-rt .fitness-goals p{
+    width:80%;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Footer Part css code */
+
+footer{
+    padding: 30px 150px;
+    background-color: var(--background-color);
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo img{
+    width:100px;
+    height:70px;
+}
+
+footer .logo p{
+    color: white;
+} 
+
+footer .footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   width:50%;}
+
+footer .footer-menu .menu-1,
+footer .footer-menu .menu-2,
+footer .footer-menu .menu-3{
+    font-size:16px;
+    padding:5px;
+}
+
+footer .footer-menu .menu-1 h4,
+footer .footer-menu .menu-2 h4,
+footer .footer-menu .menu-3 h4{
+    font-size: 20px;
+    color: white;
+    padding:  5px 0;
+}
+
+footer .footer-menu .menu-1 a li,
+footer .footer-menu .menu-2 a li,
+footer .footer-menu .menu-3 a li{
+    color: white;
+    padding:  5px 0;
+}
+/* Social Media Section */
+.icon-bar{
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.icon-bar a{
+    width:180px;
+    color: white;
+    background-color:var(--primary-button-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:20px;
+    padding:5px;
+    transition: all 0.5s linear;
+    transform: translateX(-145px);
+}
+
+.icon-bar a:hover{
+    transform: translateX(0);
+}
+
+.icon-bar a .fab{
+    padding-left: 7px;
+    font-size: 20px;
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+@keyframes  letszoom {
+    from{
+        transform: scale(0.6);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
